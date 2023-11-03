@@ -27,3 +27,6 @@
 
 # 유스케이스 다이어그램
 ![paintshop_usecase](./project_documents/paintshop_usecase.png)
+
+# 클래스 다이어그램
+![paintshop_usecase](./project_documents/paintShopClassDiagram.png)
