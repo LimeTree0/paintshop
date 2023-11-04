@@ -1,4 +1,4 @@
-package com.limecoding.paintShop;
+package com.limecoding.paintshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

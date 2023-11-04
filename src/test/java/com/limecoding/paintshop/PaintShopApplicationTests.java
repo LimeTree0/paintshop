@@ -1,4 +1,4 @@
-package com.limecoding.paintShop;
+package com.limecoding.paintshop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
