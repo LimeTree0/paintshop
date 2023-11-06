@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>그림 전시장</title>
 </head>
 <body>
 그림 구입 메인페이지입니다.
+
+<h1>기본 테이블</h1>
+<table>
+    <tr>
+        <th>user</th>
+        <th>age</th>
+    </tr>
+    <tr th:each="dto : ${paintResponseDtoList}">
+        <td th:text="${dto.author}">username</td>
+        <td th:text="${dto.title}">0</td>
+    </tr>
+</table>
+
 </body>
 </html>

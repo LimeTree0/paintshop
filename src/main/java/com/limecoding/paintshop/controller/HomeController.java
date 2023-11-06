@@ -40,7 +40,7 @@ public class HomeController {
         log.info("[HomeController] joinDto={}", joinDto);
         log.info("[HomeController] userService={}", userService);
         userService.registerUser(joinDto);
-        return "join";
+        return "redirect:/";
     }
 
 
