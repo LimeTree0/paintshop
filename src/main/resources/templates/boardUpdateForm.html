@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>글 수정</title>
+</head>
+<body>
+<h1>글 수정 페이지입니다.</h1>
+<form th:action="|/board/update/${responseDto.id}|" method="post">
+    <div>
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" th:value="${responseDto.title}">
+    </div>
+    <div>
+        <label for="author">저자</label>
+        <input type="text" id="author" name="author" th:value="${responseDto.author}" readonly>
+    </div>
+    <div>
+        <label for="content">내용</label>
+        <textarea id="content" name="content" cols="50" rows="20" th:text="${responseDto.content}"></textarea>
+    </div>
+    <input type="submit" value="저장">
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div th:object="${responseDto}">
+        제목: <div th:text="*{title}"></div>
+        저자: <div th:text="*{author}"></div>
+        내용: <div th:text="*{content}"></div>
+    </div>
+</div>
+<a th:href="|/board/update/${responseDto.id}|">글 수정하기</a>
+<a th:href="|/board/delete/${responseDto.id}|">글 삭제하기</a>
+</body>
+</html>
